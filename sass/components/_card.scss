@@ -1,0 +1,40 @@
+.card {
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+    &__photo {
+        background-size: cover;
+        height: 23rem;
+        &--1 {
+            background-image: url(../img/icom.jpg);
+            background-position: center;
+        }
+
+        &--2 {
+            background-image: url(../img/fiber.jpg);
+            background-position: center;
+        }
+
+        &--1 {
+            background-image: url(../img/icom.jpg);
+            background-position: center;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__description {
+        padding: 2rem;
+    }
+
+    &__title {
+        display: block;
+        font-size: 2.6rem;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: 1.5rem;
+    }
+}
