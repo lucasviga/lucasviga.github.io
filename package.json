@@ -1,24 +1,39 @@
 {
-  "name": "lucasviga",
-  "version": "1.0.0",
-  "description": "portfolio",
-  "main": "index.js",
-  "scripts": {
-    "sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver": "live-server",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.concat.css -o css/style.prefix.css"
-  },
-  "author": "Lucas",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^9.5.0",
-    "concat": "^1.0.3",
-    "live-server": "^1.2.1",
-    "node-sass": "^4.11.0"
-  },
+  "homepage": "https://lucasviga.github.io/",
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "postcss-cli": "^6.1.2"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "gh-pages": "^2.1.1",
+    "install": "^0.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
